@@ -2,13 +2,12 @@ import React from 'react';
 import { Localized } from 'fluent-react';
 
 export default function App() {
-  const component = <p>this is a component</p>;
   const date = new Date();
   const linkA = <a href="http://example.com/A">A</a>;
   const linkB = <Localized id="link-to-b"><a href="http://example.com/B">B</a></Localized>;
   return (
     <div>
-      <Localized id="title" $date={date} $component={component}>
+      <Localized id="title" $date={date}>
         <h1>Hello, world!</h1>
       </Localized>
       <Localized

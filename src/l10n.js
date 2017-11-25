@@ -6,7 +6,7 @@ const MESSAGES_ALL = {
 title = Witaj świecie!
   `,
   'en-US': `
-title = Hello, world! { $component }. Today is { $date } { DATETIME($date, month: "long", day: "numeric") }
+title = Hello, world! Today is { DATETIME($date, month: "long", day: "numeric") }
 welcome = Click { $linkA } or { $linkB}.
   `,
 };
